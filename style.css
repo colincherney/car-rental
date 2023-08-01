@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f5f5f5;
   font-family: "Alegreya", serif;
@@ -23,7 +27,7 @@ body {
 
 .navbar a:first-child {
   background: linear-gradient(to left, white 50%, #fbceb1 50%) right;
-  background-size: 200% 100%;
+  background-size: 201% 100%;
   transition: 0.5s ease-out;
 }
 
@@ -107,4 +111,55 @@ body {
   padding-top: 100px;
   display: flex;
   justify-content: center;
+}
+
+.about h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-combine {
+  display: flex;
+  gap: 100px;
+  text-align: center;
+  padding: 100px;
+  justify-content: center;
+}
+
+.about-left-side {
+  border: #b87333 2px solid;
+  padding: 10px;
+  width: 500px;
+}
+
+.about-right-side {
+  border: #b87333 2px solid;
+  padding: 10px;
+  width: 500px;
+}
+
+.about-view-rentals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#down-arrow-button {
+  animation: pulsing 2s infinite;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
