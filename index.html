@@ -15,14 +15,14 @@
   <body>
     <nav class="navbar">
       <a href="#about">About</a>
-      <a href="">Rentals</a>
+      <a href="#rentals">Rentals</a>
       <a href="">Contact</a>
     </nav>
     <div class="main-header-area">
       <div class="left-side">
         <h1>Premium Picks</h1>
         <h2>Car Rentals</h2>
-        <a href="">Rent Now</a>
+        <a href="#rentals">Rent Now</a>
       </div>
       <div class="right-side">
         <img src="car-icon.png" alt="" />
@@ -63,12 +63,37 @@
       </div>
       <div class="about-view-rentals">
         <h2>Rental Options</h2>
-        <a href="" id="down-arrow-button"
+        <a href="#rentals" id="down-arrow-button"
           ><img src="down-arrow.png" alt=""
         /></a>
       </div>
     </div>
+    <div class="rentals" id="rentals">
+      <h1>Our Rental Cars:</h1>
+      <div class="car-selection-container">
+        <div class="rental-left-side">
+          <a onclick="showBentley()"
+            ><h3 class="cars" id="bentley">2023 Bentley Continental GT</h3></a
+          >
+          <a onclick="showCadillac()"
+            ><h3 class="cars" id="cadillac">2023 Cadillac Escalade</h3></a
+          >
+          <a onclick="showJeep()"><h3 class="cars">2024 Jeep Wrangler</h3></a>
+          <a onclick="showPorsche()"><h3 class="cars">2023 Porsche 911</h3></a>
+          <a onclick="showLincoln()"
+            ><h3 class="cars">2024 Lincoln Navigator</h3></a
+          >
+          <a onclick="showChevy()"
+            ><h3 class="cars">2023 Chevrolet Tahoe</h3></a
+          >
+        </div>
+        <div class="rental-right-side">
+          <img src="bentley.jpg" alt="" id="car-image" />
+        </div>
+      </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

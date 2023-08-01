@@ -163,3 +163,43 @@ body {
     transform: scale(1);
   }
 }
+
+.rentals {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.car-selection-container {
+  display: flex;
+  border: #b87333 2px solid;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.car-selection-container img {
+  width: 800px;
+  height: auto;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.car-selection-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.car-selection-container h3 {
+  border: #fbceb1 solid 2px;
+  padding: 20px;
+  background: linear-gradient(to left, #fbceb1 50%, white 50%) left;
+  background-size: 200% 100%;
+  transition: 0.5s ease-out;
+}
+
+.car-selection-container h3:hover {
+  background-position: right;
+  cursor: pointer;
+}
