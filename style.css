@@ -1,3 +1,10 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Alegreya", serif;
+  font-family: "Dai Banna SIL", serif;
+  font-family: "DM Sans", sans-serif;
+}
+
 .navbar {
   display: flex;
   font-size: 25px;
@@ -7,8 +14,7 @@
 
 .navbar a {
   text-decoration: none;
-  color: black;
-  background-color: #f5f5f5;
+  color: #b87333;
   padding: 10px;
   padding-left: 40px;
   padding-right: 40px;
@@ -16,19 +22,19 @@
 }
 
 .navbar a:first-child {
-  background: linear-gradient(to left, #f5f5f5 50%, #fbceb1 50%) right;
+  background: linear-gradient(to left, white 50%, #fbceb1 50%) right;
   background-size: 200% 100%;
   transition: 0.5s ease-out;
 }
 
 .navbar a:nth-child(2) {
-  background: linear-gradient(to bottom, #f5f5f5 50%, #fbceb1 50%) top;
+  background: linear-gradient(to bottom, white 50%, #fbceb1 50%) top;
   background-size: 100% 200%;
   transition: 0.5s ease-out;
 }
 
 .navbar a:last-child {
-  background: linear-gradient(to left, #fbceb1 50%, #f5f5f5 50%) left;
+  background: linear-gradient(to left, #fbceb1 50%, white 50%) left;
   background-size: 200% 100%;
   transition: 0.5s ease-out;
 }
@@ -55,4 +61,50 @@
 
 .navbar a:last-child {
   border-radius: 0px 20px 20px 0px;
+}
+
+.main-header-area {
+  color: #b87333;
+  display: flex;
+  justify-content: center;
+}
+
+.main-header-area img {
+  width: auto;
+  height: 70%;
+}
+
+.main-header-area h1 {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: #fbceb1 10px 50px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+.left-side a {
+  text-decoration: none;
+  color: #b87333;
+  border: #b87333 2px solid;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50px;
+  background: linear-gradient(to left, white 50%, #fbceb1 50%) right;
+  background-size: 200% 100%;
+  transition: 0.5s ease-out;
+}
+
+.left-side a:hover {
+  background-position: left;
+}
+
+.right-side {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
