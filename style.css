@@ -179,11 +179,11 @@ body {
   border-radius: 30px;
 }
 
-.car-selection-container img {
-  width: 800px;
+#car-image {
+  width: 600px;
   height: auto;
   margin: 20px;
-  margin-left: 100px;
+  margin-left: 0;
 }
 
 .car-selection-container a {
@@ -221,4 +221,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.rental-right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.information-icons {
+  height: auto;
+  width: 50px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.information h2 {
+  margin: 0;
 }
